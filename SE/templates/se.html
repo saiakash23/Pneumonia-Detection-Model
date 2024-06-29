@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete responsive hospital website design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/se.css')}}">
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/form.css') }}">
+</head>
+<body>
+
+<!--header section-->
+<header class="header">
+    <a href="#" class="logo"> <i class="fas fa-heartbeat"></i>PneumoInsight</a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#footer">services</a>
+        <a href="logout.php" class="btn btn-warning">Logout</a>
+    </nav>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+</header>
+
+
+
+<!-- home section-->
+<section class="home" id="home">
+    
+    <div class="image">
+        <img src="{{ url_for('static',filename='img/img1.jpg') }}">
+    </div>
+
+    <div class="content">
+        <h3>PneumoInsight: Your Gateway to Early Diagnosis and Prevention</h3>
+        
+    </div>
+</section>
+        <!--home section ends-->
+        <!--about section-->
+
+        <section class="about" id="about">
+            <div class="row">
+                <div class="image">
+                    <img src="{{ url_for('static',filename='img/img2.jpg') }}">
+                </div>
+                <div class="content">
+                    <h3>we detect Pneumonia</h3>
+        <!-- <form method="post" enctype="multipart/form-data">
+        <h3><input type="file" name="file" accept="image/*"></h3>
+        <h3><input type="submit" value="Upload"></h3>
+    </form> -->
+    <form class="upload-form" method="post" enctype="multipart/form-data">
+            <label for="file-upload" class="custom-file-upload">
+                <i class="fas fa-cloud-upload-alt"></i> Choose File
+            </label>
+            <input id="file-upload" type="file" name="file" accept="image/*">
+            <input class="submit-button" type="submit" value="Upload">
+        </form>
+
+                </div>
+            </div>
+        </section>
+                <!--about sections ends-->
+                <!--footer section-->
+        <section class="footer" id="footer">
+            <div class="box-container">
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="#"> <i class="fas fa-chevron-right"></i>home</a>
+                    <a href="#"> <i class="fas fa-chevron-right"></i>services</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i>about</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i>doctors</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i>book</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i>review</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i>blogs</a>
+                </div>
+        
+                <div class="box">
+                    <h3>our servies</h3>
+                    <a href="#"><i class="fas fa-chevron-right"></i>home</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i>services</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i>about</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i>doctors</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i>book</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i>review</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i>blogs</a>
+                </div>
+        
+                <div class="box">
+                    <h3>our servies</h3>
+                    <a href="#"><i class="fas fa-phone"></i>+123-456-7890</a>
+                    <a href="#"><i class="fas fa-phone"></i>+123-456-7890</a>
+                    <a href="#"><i class="fas fa-envelope"></i>xyzxyz@gmail.com</a>
+                    <a href="#"><i class="fas fa-envelope"></i>abcabcabc@gmail.com</a>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i>mumbai, india - 400104</a>
+                </div>
+        
+                <div class="box">
+                    <h3>follow us</h3>
+                    <a href="#"><i class="fas fa-facebook-f"></i>facebood</a>
+                    <a href="#"><i class="fas fa-twitter"></i>twitter</a>
+                    <a href="#"><i class="fas fa-instagram"></i>instagram</a>
+                    <a href="#"><i class="fas fa-linkedin"></i>linkedin</a>
+                    <a href="#"><i class="fas fa-pinterest"></i>pinterest</a>
+                </div>
+            </div>
+        
+            <div class="credit"> Created By <span>Mr.Web Designer</span> | All Rights Reserved</div>
+        </section>
+<script src="{{ url_for('static',filename='script/se.js') }}"></script>
+</body>
+</html>
